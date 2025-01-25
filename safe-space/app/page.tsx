@@ -1,10 +1,18 @@
 // app/page.tsx
-
+'use client';
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const HomePage: React.FC = () => {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-white text-black">
+      {/* <div>
+      <button onClick={() => router.push("/")}>Go to Home</button>
+      <button onClick={() => router.push("/ChatBot")}>Go to About</button>
+      <button onClick={() => router.push("/contact")}>Go to Contact</button>
+      <button onClick={() => router.push("/services")}>Go to Services</button>
+      </div> */}
       {/* Navbar */}
       <nav className="flex justify-between items-center p-5 shadow-md bg-black text-white">
         <div className="text-xl font-bold">MyApp</div>
