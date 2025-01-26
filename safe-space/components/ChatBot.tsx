@@ -99,15 +99,15 @@ export function ChatBot() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-gray-100">
-      <div className="p-4 flex items-center justify-between bg-white shadow-md">
+    <div className="flex flex-col h-screen">
+      <div className="p-4 flex items-center justify-between shadow-md">
         <div className="text-xl font-bold">Safe Space</div>
         <div className="flex space-x-2">
           <Button onClick={toggleChatVisibility}>
             {isChatVisible ? "Hide Chat" : "Show Chat"}
           </Button>
           <Button>
-            <a href="/api/auth/logout" className="bg-black text-white rounded-md">
+            <a href="/api/auth/logout">
               Log Out
             </a>
           </Button>
@@ -130,7 +130,7 @@ export function ChatBot() {
                 <div key={index} className={`mb-4 ${message.role === "user" ? "text-right" : "text-left"}`}>
                   <div
                     className={`inline-block p-3 rounded-lg ${
-                      message.role === "user" ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-800"
+                      message.role === "user" ? "bg-purple-400 text-white" : "bg-gray-200 text-gray-800"
                     }`}
                   >
                     <p>
@@ -141,7 +141,7 @@ export function ChatBot() {
               ))}
           </ScrollArea>
 
-          <div className="p-4 border-t bg-white">
+          <div className="p-4 border-t ">
             <div className="flex items-center">
               <textarea
                 value={inputValue}

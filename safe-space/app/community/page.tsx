@@ -44,9 +44,9 @@ export default function CommunityForum() {
   }
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen">
       {/* Forum List */}
-      <div className="w-64 bg-white border-r">
+      <div className="w-64  border-r">
         <div className="p-4 font-semibold text-lg border-b">Forums</div>
         <ScrollArea className="h-[calc(100vh-60px)]">
           {forums.map((forum) => (
