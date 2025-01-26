@@ -22,9 +22,9 @@ const HomePage: React.FC = () => {
           <a href="/api/auth/login?returnTo=/chatBot" className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
             Log In
           </a>
-          <a href="/api/auth/logout" className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
+          {/* <a href="/api/auth/logout" className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
             Log Out
-          </a>
+          </a> */}
         </div>
       </nav>
 

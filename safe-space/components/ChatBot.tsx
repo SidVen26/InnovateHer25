@@ -100,13 +100,26 @@ export function ChatBot() {
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-      <div className="p-4 bg-white shadow-md">
-        <h1 className="text-2xl font-bold">Safe Space</h1>
+      <div className="p-4 flex items-center justify-between bg-white shadow-md">
+        <div className="text-xl font-bold">Safe Space</div>
+        <div className="flex space-x-2">
+          <Button onClick={toggleChatVisibility}>
+            {isChatVisible ? "Hide Chat" : "Show Chat"}
+          </Button>
+          <Button>
+            <a href="/api/auth/logout" className="bg-black text-white rounded-md">
+              Log Out
+            </a>
+          </Button>
+        </div>
       </div>
 
+
+
       <div className="p-4">
-        <Button onClick={toggleChatVisibility}>{isChatVisible ? "Hide Chat" : "Show Chat"}</Button>
+
       </div>
+
 
       {isChatVisible && (
         <div className="flex-1 flex flex-col overflow-hidden">
