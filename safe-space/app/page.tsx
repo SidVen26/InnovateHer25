@@ -7,7 +7,7 @@ import { Heart, Users, Home, MessageCircle, Map, Book, MessageSquare, MapPin, Li
 const HomePage: React.FC = () => {
   const router = useRouter();
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen text-black">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-5 shadow-md bg-black text-white">
         <div className="text-xl font-bold">Safe Space</div>
