@@ -7,12 +7,6 @@ const HomePage: React.FC = () => {
   const router = useRouter();
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* <div>
-      <button onClick={() => router.push("/")}>Go to Home</button>
-      <button onClick={() => router.push("/ChatBot")}>Go to About</button>
-      <button onClick={() => router.push("/contact")}>Go to Contact</button>
-      <button onClick={() => router.push("/services")}>Go to Services</button>
-      </div> */}
       {/* Navbar */}
       <nav className="flex justify-between items-center p-5 shadow-md bg-black text-white">
         <div className="text-xl font-bold">MyApp</div>
@@ -21,9 +15,17 @@ const HomePage: React.FC = () => {
           <a href="#features" className="hover:underline">Features</a>
           <a href="#about" className="hover:underline">About</a>
         </div>
-        <button className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
+        {/* <button className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
           Log In
-        </button>
+        </button> */}
+        <div className="flex space-x-2">
+          <a href="/api/auth/login?returnTo=/chatBot" className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
+            Log In
+          </a>
+          <a href="/api/auth/logout" className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200">
+            Log Out
+          </a>
+        </div>
       </nav>
 
       {/* Landing Section */}
