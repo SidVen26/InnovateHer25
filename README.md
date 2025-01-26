@@ -1,4 +1,4 @@
-# Safe-space
+# Safe-Space
 
 ## Inspiration
 An average of 24 people per minute are victims of rape, physical violence, or stalking by an intimate partner in the United States — more than 12 million women and men over a single year. On top of that, with the laws regarding women's health changing daily, we thought of creating a web application that provides resources and a community for women in crisis. 
